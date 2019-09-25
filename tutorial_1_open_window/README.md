@@ -1,7 +1,7 @@
 # Tutorial 1: Open a Window
 In this tutorial we're going to simply open a window that can be closed when you hit the escape key.
 
-I'm going to step through the code below, but the full source can be found [here](tutorial_1_open_window/main.go)
+I'm going to step through the code below, but the full source can be found [here](main.go).
 
 ## Imports
 In order to work with OpenGL we're going to use the [go-gl](https://github.com/go-gl/) library. We'll need to import the core GL module as wel as the Graphics Library Framework module.
@@ -78,4 +78,4 @@ First we're telling our window to turn on `StickyKeysMode`. This isn't the infam
 
 Next we enter the main loop. There are a number of reasons that a window might need to close, so we want to use the `window.ShouldClose()` as our conditional. We then clear the screen, tell OpenGL to use our (currently empty) program, poll for events (used to detect the keypress in this instance), swap our window buffer (doesn't do anything because we aren't rendering anything yet), and finally check to see if the escape key was pressed. If it was pressed, we let GLFW know that it should close the window.
 
-And that's it! If you build and execute your code you should see a blank window appear, which sets the stage nicely for [Tutorial 2](tutorial_2_first_triangle/README.md).
+And that's it! If you build and execute your code you should see a blank window appear, which sets the stage nicely for [Tutorial 2](../tutorial_2_first_triangle/README.md).
